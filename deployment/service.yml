@@ -1,0 +1,31 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: step-warrior
+spec:
+  selector:
+    app: step-warrior
+  ports:
+  - name: http
+    port: 80
+    targetPort: 8080
+    protocol: TCP
+  type: NodePort
+
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: step-warrior
+  annotations:
+    kubernetes.io/tls-acme: "true"
+    kubernetes.io/ingress.class: "gce"
+spec:
+  tls:
+  - secretName: step-warrior-api-tls
+    hosts:
+    - api.stepwarriors.com
+  backend:
+    serviceName: step-warrior
+    servicePort: 80

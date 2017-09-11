@@ -1,0 +1,43 @@
+{
+  "materials": [
+    {
+      "name": "Rare Dust",
+      "rarity": "rare"
+    },
+    {
+      "name": "Super Dust",
+      "rarity": "super"
+    },
+    {
+      "name": "Common Dust",
+      "rarity": "common"
+    },
+    {
+      "name": "Legendary Dust",
+      "rarity": "legendary"
+    }
+  ],
+  "equipment": [
+    {
+      "name": "Foo",
+      "rarity": "common",
+      "attributes": [
+        {
+          "type": "strength",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "name": "Foo",
+      "rarity": "common",
+      "attributes": [
+        {
+          "type": "strength",
+          "value": 15
+        }
+      ]
+    }
+  ],
+  "plans": null
+}

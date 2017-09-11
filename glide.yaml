@@ -1,0 +1,12 @@
+package: github.com/treacher/step-warrior-api
+import:
+- package: github.com/bmizerany/pat
+- package: gopkg.in/pg.v5
+- package: github.com/pressly/chi
+  version: ~2.1.0
+- package: github.com/newrelic/go-agent
+  version: ~1.9.0
+testImport:
+- package: github.com/bluele/go-timecop
+- package: github.com/onsi/ginkgo
+- package: github.com/onsi/gomega
